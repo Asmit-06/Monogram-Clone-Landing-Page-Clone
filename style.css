@@ -1,0 +1,390 @@
+ *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: system-ui, -apple-system, sans-serif;
+    }
+
+    html,body {
+      /* scroll-behavior:smooth; */
+      height: 100%;
+       width: 100%;
+    
+    }
+
+    .header{
+      padding:15px;
+      position: fixed;
+      top: 0;
+      left:0;
+      right:0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #1A2456;
+      padding: 0.4vw 0.5vw;
+    }
+
+    .icon-container{
+      display: flex;
+      align-items: center;
+      gap:10px;
+    }
+
+    .nav-left a svg{
+      color:#EFC2B3;
+      display: block;
+    }
+    .nav-left a svg:hover{
+      color:#c6785e;
+    }
+    .nav-right{
+      display: flex;
+      color:#EFC2B3;
+      font-size: 0.75rem;
+      align-items: center;
+      gap:35px;
+      letter-spacing: 2px;
+      font-weight: 600;
+    }
+
+    .nav-right p:nth-child(6){
+      font-weight: 400;
+    }
+
+    .section1 {
+      height: 72.5vh;
+      position: relative;
+    }
+    .section1::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    .section1 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .section1 .section1-paragraph{
+      position: absolute;
+      left: 50%;
+      top:50%;
+      transform: translate(-50%,-50%);
+      color:#EFC2B3;
+      z-index: 10;
+      text-align: center;
+      line-height: 1.2;
+      width:25%;
+    }
+
+    .section1 .section1-paragraph .p1{
+      font-size: 2.3rem;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 1vw;
+    }
+    .section1 .section1-paragraph .p2{
+      font-size: 1.1rem;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 1rem;
+      padding:3rem 23rem 1.5rem 23rem;
+    }
+
+    .product-card {
+       position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    .product-grid .product-card:nth-child(1):hover img{
+      content: url("https://cdn.shopify.com/s/files/1/0974/7950/products/Everyday-Bundle-Mocks-horizontal_1920x1281_crop_center.jpg.webp?v=1668446709");
+    }
+    .product-grid .product-card:nth-child(2):hover img{
+      content: url("https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_TravelerBracket1_Monogram_May2020_4561_30a35bd4-01b4-44db-894a-e06162d8ab77_1920x1280_crop_center.jpg.webp?v=1668433146");
+    }
+    .product-grid .product-card:nth-child(3):hover img{
+      content: url("https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_StudioBracket1_Monogram_May2020_4558_53685b21-b09f-45b0-85a2-180d6acfafac_1920x1280_crop_center.jpg.webp?v=1668433210");
+    }
+    .product-grid .product-card:nth-child(4):hover img{
+      content: url("https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_MasterBracket1_Monogram_May2020_4555_1920x1280_crop_center.jpg.webp?v=1668433240");
+    }
+
+    .pre-order-btn{
+      position: absolute;
+      background: #FF8D6B;
+      border:none;
+      font-weight: 600;
+      font-size: 0.7rem;
+      letter-spacing: 1.5px;
+      padding:5px 15px;
+      right:0;
+      top:4%;
+      cursor: pointer;
+    }
+    .product-card img {
+      width: 100%;
+      object-fit: cover;
+    }
+    .card-info {
+      padding-top:0.5rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .card-info p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+    .product-2-keyboard{
+      padding:0rem 23rem 3rem 23rem;
+    }
+
+    .keyboard{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      position: relative;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    .keyboard:hover img {
+      content: url("https://cdn.shopify.com/s/files/1/0974/7950/files/Monogram_Keyboard_2_878639a5-2865-4c4f-a21e-498f3a3db3b8_1920x1080_crop_center.jpg.webp?v=1712087494");
+    }
+
+    .keyboard img{
+        height: 450px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .section3 {
+      background: #C5C5C5;
+      width: 100%;
+    }
+
+    .section3 .container {
+      width: 100%;
+      position: relative;
+    }
+
+    .section3 .container img {
+      width:100%;
+      height: 480px;
+      object-fit: contain;
+      display: block;
+    }
+
+    .section3 .container .paragraph-container {
+     position: absolute;
+     left:50%;
+     top:17%;
+     transform: translate(-50%,-50%);
+     text-align: center;
+    }
+
+    .section3 .container .paragraph-container .p1{
+      font-size: 2.4rem;
+      font-weight: 600;
+      letter-spacing: 3px;
+      color:#1A2456;
+      margin-bottom: 0.5vw;
+    }
+
+    .section3 .container .paragraph-container .p2{
+      font-size: 1.1rem;
+    }
+
+    .section4-product-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 2.5rem;
+      padding:3rem 23rem 1.5rem 23rem;
+    }
+
+    .section4-product-card {
+      position:relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      cursor: pointer;
+    }
+    .section4-product-card:nth-child(1):hover img{
+      content:url("https://cdn.shopify.com/s/files/1/0974/7950/files/preview_images/d1564dbc344144d594c1e602d3ab46d7.thumbnail.0000000000_1920x1080_crop_center.jpg.webp?v=1712243546");
+    }
+    .section4-product-card:nth-child(2):hover img{
+      content:url("https://cdn.shopify.com/s/files/1/0974/7950/files/Monogram_Keyboard_3_45ca86e3-ee84-48a0-b55d-c991d2e57e3c_1920x1080_crop_center.jpg.webp?v=1712087520");
+    }
+    .section4-product-card:nth-child(3):hover img{
+      content:url("https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_CoreBracket1_Monogram_May2020_4578_6683fd8e-be63-45bb-9fbd-dd82a4838db8_1920x1280_crop_center.jpg.webp?v=1593651640");
+    }
+    .section4-product-card:nth-child(4):hover img{
+      content:url("https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_SliderBracket1_Monogram_May2020_4565_f941e8d9-d194-47ee-a54a-79132f105e34_1920x1280_crop_center.jpg.webp?v=1593651879");
+    }
+    .section4-product-card:nth-child(5):hover img{
+      content:url("https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_OrbiterHero_Monogram_May2020_4568_3d64e8b3-71ce-441a-9fcd-2b054c423310_1920x1280_crop_center.jpg.webp?v=1593651849");
+    }
+    .section4-product-card:nth-child(6):hover img{
+      content:url("https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_KeysBracket1_Monogram_May2020_4571_43b65ca9-4fde-4f55-9f0e-32374554ce76_1920x1280_crop_center.jpg.webp?v=1593651769");
+    }
+    .section4-product-card:nth-child(7):hover img{
+      content:url("https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_DialBracket1_Monogram_May2020_4575_981a6401-f834-4094-9a6e-6cd7d0b374ca_1920x1280_crop_center.jpg.webp?v=1593651701");
+    }
+    .section4-product-card:nth-child(8):hover img{
+      content:url("https://cdn.shopify.com/s/files/1/0974/7950/products/20221018_MonogramCC_Case_02_1920x1280_crop_center.jpg.webp?v=1666799808");
+    }
+    .section4-product-card:nth-child(12):hover img{
+      content:url("https://cdn.shopify.com/s/files/1/0974/7950/products/MONO_CONSOLE_CARE_STU_453eaa1a-02d9-4ba7-9d9a-8d05e2915f8f_1920x1270_crop_center.jpg.webp?v=1633485492");
+    }
+     .section4-product-card img {
+      width: 100%;
+      object-fit: cover;
+      height:350px;
+    }
+
+    .pre-order-btn4{
+        position: absolute;
+        background: #FF8D6B;
+        border:none;
+        font-weight: 600;
+        font-size: 0.7rem;
+        letter-spacing: 1.5px;
+        padding:5px 15px;
+        right:0%;
+        top:4%;
+        cursor: pointer;
+    }
+
+    .card-info4 {
+        padding-top:0.5rem;
+        flex-grow: 1;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .shop-btn{
+      opacity: 0;
+      visibility: hidden;
+        background: #1A2456;
+        color:white;
+        font-weight: 600;
+        border:none;
+        letter-spacing: 1px;
+        padding:7px 15px;
+        font-size: 0.7rem;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+
+    .section4-product-card:hover .shop-btn {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    footer{
+        padding:45px;
+        background-color: #1A2456;
+        font-size: 0.9rem;
+        color:#EFC2B3;
+        padding-bottom:90px;
+    }
+
+    .footer-sub{
+       display: flex;
+       justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto 0 auto;
+    }
+
+    .top-p{
+        margin-bottom: 0.6vw;
+        font-weight: 900;
+        font-size: 0.7rem;
+        letter-spacing: 1px;
+    }
+    .footer1, .footer2, .footer3, .footer4{
+        display: flex;
+        flex-direction: column;
+        gap:0.2vw;
+    }
+
+    .footer5{
+      max-width: 27em;
+    }
+
+    .email-box{
+      background: transparent;
+      border: 1px solid #EFC2B3;
+      font-size: 0.8rem;
+      padding:0px 7px;
+      color:white;
+    }
+    .input-container{
+      display: flex;
+      gap:0.7vw;
+    }
+    .footer5 p:nth-child(2){
+      margin-bottom: 10px;
+    }
+
+    .submit-btn{
+      background: #A58B93;
+      border:none;
+      border-radius:50px;
+      color:#1A2456;
+      padding:8px 25px;
+      font-weight: 600;
+      font-size: 0.75rem;
+      letter-spacing: 1px;
+    }
+    .socials {
+      display: flex;
+      gap: 0.5rem;
+      margin: 1rem 0 1.5rem 0;
+    }
+
+    .socials a {
+      align-items: center;
+      background-color: #efc2b3;
+      border-radius: 50%;
+      display: inline-flex;
+      height: 2em;
+      padding: 0.5em;
+      width: 2em;
+      color: #ff7952;
+      text-decoration: none;
+      justify-content: center;
+    }
+
+    .socials a svg {
+      height: 1.3em;
+      width: 1.3em;
+      overflow: hidden;
+    }
+
+    .copyright{
+      font-size: 0.75rem;
+      letter-spacing: 0.6px;
+    }

@@ -1,0 +1,134 @@
+@media (max-width: 450px) {
+  .header {
+    padding: 10px;
+  }
+
+  nav {
+    padding: 10px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-left a svg {
+    width: 120px;
+    height: 25px;
+  }
+
+  .nav-right {
+    display: none; /* Hide nav items on mobile, replace with hamburger menu if needed */
+  }
+
+  .section1 {
+    height: 50vh;
+    margin-top: 60px;
+  }
+
+  .section1 .section1-paragraph {
+    width: 90%;
+    padding: 0 20px;
+  }
+
+  .section1 .section1-paragraph .p1 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+  }
+
+  .section1 .section1-paragraph .p2 {
+    font-size: 1rem;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem 20px 1rem 20px;
+  }
+
+  .product-card {
+    max-width: 100%;
+  }
+
+  .product-2-keyboard {
+    padding: 0rem 20px 2rem 20px;
+  }
+
+  .keyboard img {
+    height: 250px;
+  }
+
+  .section3 .container img {
+    height: 300px;
+  }
+
+  .section3 .container .paragraph-container {
+    top: 20%;
+    width: 90%;
+  }
+
+  .section3 .container .paragraph-container .p1 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+
+  .section3 .container .paragraph-container .p2 {
+    font-size: 1rem;
+  }
+
+  .section4-product-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem 20px 1rem 20px;
+  }
+
+  .section4-product-card img {
+    height: 250px;
+  }
+
+  .card-info4 {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .shop-btn {
+    opacity: 1;
+    visibility: visible;
+    align-self: flex-start;
+  }
+
+  footer {
+    padding: 30px 20px;
+  }
+
+  .footer-sub {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer5 {
+    max-width: 100%;
+  }
+
+  .input-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .email-box {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+
+  .top-p {
+    margin-bottom: 15px;
+  }
+}
+
